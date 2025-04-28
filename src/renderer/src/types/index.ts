@@ -161,21 +161,6 @@ export type Suggestion = {
   content: string
 }
 
-export interface Painting {
-  id: string
-  model?: string
-  urls: string[]
-  files: FileType[]
-  prompt?: string
-  negativePrompt?: string
-  imageSize?: string
-  numImages?: number
-  seed?: string
-  steps?: number
-  guidanceScale?: number
-  promptEnhancement?: boolean
-}
-
 export type MinAppType = {
   id: string
   name: string
@@ -339,7 +324,7 @@ export interface TranslateHistory {
   createdAt: string
 }
 
-export type SidebarIcon = 'assistants' | 'agents' | 'paintings' | 'translate' | 'minapp' | 'knowledge' | 'files'
+export type SidebarIcon = 'assistants' | 'agents' | 'translate' | 'minapp' | 'knowledge' | 'files' | 'test'
 
 export type WebSearchProvider = {
   id: string

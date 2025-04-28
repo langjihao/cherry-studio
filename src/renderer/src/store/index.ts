@@ -14,7 +14,6 @@ import messagesReducer from './messages'
 import migrate from './migrate'
 import minapps from './minapps'
 import nutstore from './nutstore'
-import paintings from './paintings'
 import runtime from './runtime'
 import settings from './settings'
 import shortcuts from './shortcuts'
@@ -25,7 +24,6 @@ const rootReducer = combineReducers({
   agents,
   backup,
   nutstore,
-  paintings,
   llm,
   settings,
   runtime,

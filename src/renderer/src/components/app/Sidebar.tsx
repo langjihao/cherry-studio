@@ -11,6 +11,7 @@ import { isEmoji } from '@renderer/utils'
 import type { MenuProps } from 'antd'
 import { Avatar, Dropdown, Tooltip } from 'antd'
 import {
+  Beaker,
   CircleHelp,
   FileSearch,
   Folder,
@@ -18,7 +19,6 @@ import {
   LayoutGrid,
   MessageSquareQuote,
   Moon,
-  Palette,
   RefreshCcw,
   Settings,
   Sparkle,
@@ -139,21 +139,21 @@ const MainMenus: FC = () => {
   const iconMap = {
     assistants: <MessageSquareQuote size={18} className="icon" />,
     agents: <Sparkle size={18} className="icon" />,
-    paintings: <Palette size={18} className="icon" />,
     translate: <Languages size={18} className="icon" />,
     minapp: <LayoutGrid size={18} className="icon" />,
     knowledge: <FileSearch size={18} className="icon" />,
-    files: <Folder size={17} className="icon" />
+    files: <Folder size={17} className="icon" />,
+    test: <Beaker size={18} className="icon" />
   }
 
   const pathMap = {
     assistants: '/',
     agents: '/agents',
-    paintings: '/paintings',
     translate: '/translate',
     minapp: '/apps',
     knowledge: '/knowledge',
-    files: '/files'
+    files: '/files',
+    test: '/test'
   }
 
   return sidebarIcons.visible.map((icon) => {

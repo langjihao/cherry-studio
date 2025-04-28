@@ -7,16 +7,16 @@ import { WebDAVSyncState } from './backup'
 
 export type SendMessageShortcut = 'Enter' | 'Shift+Enter' | 'Ctrl+Enter' | 'Command+Enter'
 
-export type SidebarIcon = 'assistants' | 'agents' | 'paintings' | 'translate' | 'minapp' | 'knowledge' | 'files'
+export type SidebarIcon = 'assistants' | 'agents' | 'translate' | 'minapp' | 'knowledge' | 'files' | 'test'
 
 export const DEFAULT_SIDEBAR_ICONS: SidebarIcon[] = [
   'assistants',
   'agents',
-  'paintings',
   'translate',
   'minapp',
   'knowledge',
-  'files'
+  'files',
+  'test'
 ]
 
 export interface NutstoreSyncRuntime extends WebDAVSyncState {}

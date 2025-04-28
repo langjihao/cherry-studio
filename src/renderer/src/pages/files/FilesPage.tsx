@@ -10,7 +10,6 @@ import ListItem from '@renderer/components/ListItem'
 import TextEditPopup from '@renderer/components/Popups/TextEditPopup'
 import db from '@renderer/databases'
 import FileManager from '@renderer/services/FileManager'
-import store from '@renderer/store'
 import { FileType, FileTypes } from '@renderer/types'
 import { formatFileSize } from '@renderer/utils'
 import { Button, Empty, Flex, Popconfirm } from 'antd'
@@ -72,13 +71,13 @@ const FilesPage: FC = () => {
   const handleDelete = async (fileId: string) => {
     const file = await FileManager.getFile(fileId)
 
-    const paintings = await store.getState().paintings.paintings
-    const paintingsFiles = paintings.flatMap((p) => p.files)
+    // const paintings = await store.getState().paintings.paintings
+    // const paintingsFiles = paintings.flatMap((p) => p.files)
 
-    if (paintingsFiles.some((p) => p.id === fileId)) {
-      window.modal.warning({ content: t('files.delete.paintings.warning'), centered: true })
-      return
-    }
+    // if (paintingsFiles.some((p) => p.id === fileId)) {
+    //   window.modal.warning({ content: t('files.delete.paintings.warning'), centered: true })
+    //   return
+    // }
 
     if (file) {
       await FileManager.deleteFile(fileId, true)

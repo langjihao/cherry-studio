@@ -17,8 +17,8 @@ import AppsPage from './pages/apps/AppsPage'
 import FilesPage from './pages/files/FilesPage'
 import HomePage from './pages/home/HomePage'
 import KnowledgePage from './pages/knowledge/KnowledgePage'
-import PaintingsPage from './pages/paintings/PaintingsPage'
 import SettingsPage from './pages/settings/SettingsPage'
+import TestPage from './pages/test/testPage'
 import TranslatePage from './pages/translate/TranslatePage'
 
 function App(): React.ReactElement {
@@ -36,11 +36,11 @@ function App(): React.ReactElement {
                     <Routes>
                       <Route path="/" element={<HomePage />} />
                       <Route path="/agents" element={<AgentsPage />} />
-                      <Route path="/paintings" element={<PaintingsPage />} />
                       <Route path="/translate" element={<TranslatePage />} />
                       <Route path="/files" element={<FilesPage />} />
                       <Route path="/knowledge" element={<KnowledgePage />} />
                       <Route path="/apps" element={<AppsPage />} />
+                      <Route path="/test" element={<TestPage />} />
                       <Route path="/settings/*" element={<SettingsPage />} />
                     </Routes>
                   </HashRouter>

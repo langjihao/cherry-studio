@@ -4372,7 +4372,7 @@ __metadata:
     electron-builder: "npm:26.0.13"
     electron-devtools-installer: "npm:^3.2.0"
     electron-icon-builder: "npm:^2.0.1"
-    electron-log: "npm:^5.1.5"
+    electron-log: "npm:^5.3.4"
     electron-store: "npm:^8.2.0"
     electron-updater: "patch:electron-updater@npm%3A6.6.3#~/.yarn/patches/electron-updater-npm-6.6.3-9269dbaf84.patch"
     electron-vite: "npm:^2.3.0"
@@ -7003,10 +7003,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-log@npm:^5.1.5":
-  version: 5.3.3
-  resolution: "electron-log@npm:5.3.3"
-  checksum: 10c0/8379736e6c9123ccc55d7ba58ed3d8c6916f1d5c97e9a714a4855513c098bf7843642d896a89cb068b3ebae3835692500322dd1ce316ca6fe7154e67fb3e3b90
+"electron-log@npm:^5.3.4":
+  version: 5.3.4
+  resolution: "electron-log@npm:5.3.4"
+  checksum: 10c0/19f77fad802ba42ce0611a4e404c1389be688bb6197435eca67a0c72e559ffa9a9fb16c468c0392a85580713f23171a873842af232f66a090a369cd1f9519f2b
   languageName: node
   linkType: hard
 

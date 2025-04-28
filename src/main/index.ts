@@ -3,7 +3,7 @@ import { replaceDevtoolsFont } from '@main/utils/windowUtil'
 import { IpcChannel } from '@shared/IpcChannel'
 import { app, ipcMain } from 'electron'
 import installExtension, { REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS } from 'electron-devtools-installer'
-import Logger from 'electron-log'
+import * as electronLog from 'electron-log'
 
 import { registerIpc } from './ipc'
 import { configManager } from './services/ConfigManager'
@@ -18,6 +18,8 @@ import { registerShortcuts } from './services/ShortcutService'
 import { TrayService } from './services/TrayService'
 import { windowService } from './services/WindowService'
 import { setUserDataDir } from './utils/file'
+
+const Logger = electronLog.default || electronLog
 
 // Check for single instance lock
 if (!app.requestSingleInstanceLock()) {
